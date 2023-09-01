@@ -17,8 +17,6 @@
     <td>
     <?php
         $connection = mysqli_connect('sql302.epizy.com', 'epiz_28810806', 'IiDZQFiD0nm','epiz_28810806_Labproject');
-
-        
         $query = $connection->query("SELECT DISTINCT Facultyname FROM facultyinfo ORDER BY Facultyname");
         $query1= $connection->query("SELECT DISTINCT course FROM facultyinfo ORDER BY course ");
         $query2= $connection->query("SELECT DISTINCT slot FROM facultyinfo ORDER BY slot");
